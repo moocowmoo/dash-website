@@ -13,48 +13,53 @@
 		<h1 class="hero__title">{% t pages.contact.hero-heading %}</h1>
 		<p class="hero__lead">{% t pages.contact.hero-text %}</p>
 
-    <div class="row">
-      <div class="col-sm-4">
-        {% t pages.contact.form-pretext %} <br/>
-        {% t pages.contact.form-pretext-2 %}
-                <a style="display: inline-block;" href="mailto:contact@dash.org"> Contact us.</a> <!-- !!!remove after form is back up-->
-      </div>
-      <div class="col-sm-6">
-        <form onsubmit="return false;">
-          <div class="row">
-            <div class="col-xs-12">
-              <input id="contact_name" placeholder="Name" type="text" class="input-block">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <input id = 'contact_email' class="input-block" placeholder="Email" type="text">
-            </div>
-           </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <select id="contact_category" class="form-control input-block" placeholder="category">
-				<option value="">Category</option>
-                <option value="feedback">Feedback</option>
-              </select>
-            </div>
-	      </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <textarea id="contact_message" placeholder="Message" class="input-block"></textarea>
-            </div>
-          </div>
+		<form onsubmit="return false;">
 			<div class="row">
-				<div class="col-xs-12">
-					<input class="btn-blue-solid reset" type="submit" value="Send Message">
-					<div id="msg_sent" style="display: none;"> Message Sent! </div>
+				<div class="col-sm-4">
+					{% t pages.contact.form-pretext %} <br/>
+					{% t pages.contact.form-pretext-2 %}
+					<!--<a style="display: inline-block;" href="mailto:contact@dash.org"> Contact us.</a>-->
+					<!-- !!!remove after form is back up-->
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-6">
+							<input id="contact_name" placeholder="Name" type="text" class="input-block bottom-space">
+							<input id='contact_email' class="input-block bottom-space" placeholder="Email" type="text">
+							<select id="contact_category" class="form-control input-block bottom-space" placeholder="category">
+								<option value="">Category</option>
+								<option value="feedback">Feedback</option>
+								<option value="inquiry">Inquiry</option>
+								<option value="offering">Offer</option>
+								<option value="request">Request</option>
+								<option value="other">Other Communication</option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<div class="callout-blue compact">
+							Dash <br/>
+							1475 North Scottsdale Road, Suite 200 <br/>
+							Scottsdale, Arizona 85257-3538 <br/>
+							USA <br />
+							<a href="https://goo.gl/maps/ES3A21Bf55y" target="_blank">View in Google Maps</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<textarea id="contact_message" placeholder="Message" class="input-block"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<input class="btn-blue-solid reset" type="submit" value="Send Message">
+							<div id="msg_sent" style="display: none;"> Message Sent!</div>
+						</div>
+					</div>
 				</div>
 			</div>
-        </form>
-      </div>
-    </div>
-
 	</div>
+	</form>
 
 
 	<!-- Hero stripe -->
@@ -62,3 +67,12 @@
 </div>
 
 
+<!--
+ ____  ____  _      _____  ____  ____  _____
+/   _\/  _ \/ \  /|/__ __\/  _ \/   _\/__ __\
+|  /  | / \|| |\ ||  / \  | / \||  /    / \
+|  \__| \_/|| | \||  | |  | |-|||  \_   | |
+\____/\____/\_/  \|  \_/  \_/ \|\____/  \_/
+
+ 20170210_2353_ccw
+-->

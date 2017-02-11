@@ -83,6 +83,11 @@ iframe {
 		padding: 10px;
 		margin-bottom: 20px;
 		text-align: center;
+	  	&.compact {
+		  padding: 6px;
+		  margin-bottom: 10px;
+		  line-height: 1.4;
+		}
 		h2 {
 			font-size: 64px;
 			margin-bottom: 20px;

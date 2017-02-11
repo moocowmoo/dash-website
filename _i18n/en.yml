@@ -287,9 +287,9 @@ pages:
     hero-image:
     hero-heading: Contact
     hero-text:
-    form-pretext: For technical support or troubleshooting with wallets, mining, or other general questions, please visit DashTalk or one of the many other community resources.
-    form-pretext-2: For other inquiries, use this link.
-        # form-pretext-2: For other inquiries, use this form.
+    form-pretext: |
+      For technical support or troubleshooting with wallets, mining, or other general questions, please visit <a href="https://www.dash.org/forum/" target="_blank">DashTalk</a> or one of the many other community resources.
+    form-pretext-2: For other inquiries, use this form.
     social-heading: Forums & Social Media
     mail-list-heading: Mailing List
     mail-list-text: Have trouble keeping up-to-date? Join our mailing list.
